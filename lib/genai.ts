@@ -13,7 +13,7 @@ export async function generateEmbedding(text: string) {
 
 export async function generateResponse(prompt: string) {
   const response = await genai.models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-2.5-flash-lite-preview-09-2025",
     contents: prompt,
   });
   return response.text as string;
