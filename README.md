@@ -29,7 +29,7 @@ Tech stack: Next.js 14 (app router) • React • TypeScript • Tailwind • Go
    - PINECONE_ENVIRONMENT=<YOUR_PINECONE_ENV>
    - PINECONE_INDEX_NAME=<YOUR_PINECONE_INDEX_NAME>
 4. npm install
-5. npm run dev
+5. npm run start
 
 ## Tests
 
