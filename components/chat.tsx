@@ -21,7 +21,6 @@ export default function Chat() {
 
     const userMessage: Message = { role: "user", content: input };
     setMessages((prev) => [...prev, userMessage]);
-    console.log("chatContainer scrollHeight:", chatContainer?.scrollHeight);
     setLoading(true);
     setTimeout(() => {
       chatContainer?.scroll({
@@ -41,7 +40,7 @@ export default function Chat() {
       const assistantMessage: Message = { role: "assistant", content: reply };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Chat API Error ::", error);
       setMessages((prev) => [
         ...prev,
         { role: "assistant", content: "Sorry, something went wrong." },
