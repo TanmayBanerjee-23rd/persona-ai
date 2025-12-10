@@ -20,6 +20,8 @@ export async function generateResponse(prompt: string) {
     "gemini-2.5-flash-lite-preview-09-2025",
     "gemini-2.0-flash",
     "gemini-2.0-pro",
+    "gemini-2.5-flash-live",
+    "gemini-2.0-flash-live",
   ];
 
   return tryGenerateResponseWithModels(prompt, geminiModels, 0);
