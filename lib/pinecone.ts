@@ -34,7 +34,13 @@ async function initializePineconeIndex() {
 
 export async function storeMessage(
   embedding: number[],
-  metadata: { role: string; content: string; timestamp: number }
+  metadata: {
+    role: string;
+    content: string;
+    category: string;
+    subCategory: string;
+    timestamp: number;
+  }
 ) {
   await initializePineconeIndex();
   const id = `msg-${Date.now()}`;

@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 .env
+*.toml
 
 # debug
 npm-debug.log*

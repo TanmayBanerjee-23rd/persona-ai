@@ -3,11 +3,7 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 export default function Home() {
   return (
-    <main className="w-full flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-2xl font-bold mb-4">
-        PersonA
-        <AutoAwesomeIcon />{" "}
-      </h1>
+    <main className="w-full flex min-h-screen flex-col items-center justify-center ">
       <Chat />
     </main>
   );
